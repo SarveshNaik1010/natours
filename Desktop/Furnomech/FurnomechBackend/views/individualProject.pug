@@ -1,0 +1,97 @@
+extends base
+
+block files
+    link(rel="stylesheet", href="css/reusablePage.css")
+    script(defer src="js/resuablePage.js") 
+    link(rel="stylesheet", href="css/individualProject.css")
+    script(defer src="js/individualProject.js")  
+    
+block content 
+    <div class="div-carousel div-carousel-overlay hidden-carousel">
+      <div class="carousel-overlay-blur"></div>
+      <div class="carousel-overlay">
+        <div class="scroll-left">
+            <ion-icon class="scroll-arrow scroll-left cursor-pointer" name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="overlay-content">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+            <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+        </div>
+        <div class="scroll-right">
+            <ion-icon class="btn-close-carousel cursor-pointer" name="close-outline"></ion-icon>
+            <ion-icon class="scroll-arrow scroll-right cursor-pointer" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+    .page.page-project 
+        .mainp-header
+            .p-header-img.div-img-pri
+                img.p-main-img(src='https://images.pexels.com/photos/17077794/pexels-photo-17077794/free-photo-of-tilt-house-behind-grass-on-montmartre.jpeg', alt='')
+            .p-header-txt
+                h1.p-header-title Project Title
+                p.p-header-para Delta needed a wonderful space planning for their office.
+                .p-header-overlay
+                    .p-overlay-align
+                        h1.overlay-title Client 
+                        p.overlay-subtitle Client Name
+                    .p-overlay-align
+                        h1.overlay-title Location 
+                        p.overlay-subtitle San Francisco, CA
+                    .p-overlay-align
+                        h1.overlay-title Duration 
+                        p.overlay-subtitle 6 Months
+                    .p-overlay-align
+                        h1.overlay-title Service 
+                        p.overlay-subtitle Space Planning
+
+        .mainp-about.sub-content
+            p.page-sub-title.animate-title &mdash; About the Project
+            .p-about-para-div
+                p.p-about-para
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi libero optio blanditiis accusantium dolore cupiditate corrupti quaerat assumenda architecto cumque aspernatur aperiam, id quod magni consectetur ratione doloremque dignissimos?
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi libero optio blanditiis accusantium dolore cupiditate corrupti quaerat assumenda architecto cumque aspernatur aperiam, id quod magni consectetur ratione doloremque dignissimos?
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi libero optio blanditiis accusantium dolore cupiditate corrupti quaerat assumenda architecto cumque aspernatur aperiam, id quod magni consectetur ratione doloremque dignissimos?
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi libero optio blanditiis accusantium dolore cupiditate corrupti quaerat assumenda architecto cumque aspernatur aperiam, id quod magni consectetur ratione doloremque dignissimos?
+
+        .project-gallery.sub-content
+            p.page-sub-title.animate-title &mdash; Gallery
+            .div-project-gallery 
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                .div-project-img 
+                    img( class="project-img" src="https://media.discordapp.net/attachments/956822381891043338/1131115814012080138/image.png?width=538&height=401", alt="")
+                

@@ -1,0 +1,36 @@
+extends base
+
+block files 
+    link(rel='stylesheet', href='css/contactUs.css')
+    link(rel='stylesheet', href='css/reusablePage.css')
+    script(defer src="js/contactUs.js" type='module') 
+
+block content
+    .page.page-contact-us
+      // Title of the page
+      .div-page-title
+        p.page-title.animate-title &mdash; Get in touch
+      // Page content
+      .div-form
+        form.form-contact-us
+          input.input.input-name(type='text', name="name" placeholder='Full Name' required)
+          input.input.input-email(type='email', name="email" placeholder='Email' required)
+          input.input.input-number(type='number', name="phNumber" placeholder='Phone Number' required)
+          input.input.input-url(type='text' name="address", placeholder='Address')
+          textarea.input.form-message(placeholder='Message', name='message', id='', cols='30', rows='10')
+          .div-captcha
+            p.captcha-text Captcha
+            label.captcha(for='')
+              - const num1 = Math.floor(Math.random() * 5) + 1;
+              - const num2 = Math.floor(Math.random() * 5) + 1;
+              span.num1= num1
+              |  + 
+              span.num2= num2
+              |  = 
+              input.input.captcha-sum(type='number')
+            p.incorrect-message.msg-hidden Captcha verification failed!
+          button.btn-submit.secondary-link.cursor-pointer() Submit
+
+      .map-address
+        iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60044.28269903104!2d75.3805254!3d19.8896652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2ddb556d651%3A0xbc30132647beede8!2sFurnomech%20-%20Designer%20Modular%20Furniture!5e0!3m2!1sen!2sin!4v1690193647973!5m2!1sen!2sin', width='600', height='450', style='border:0;', allowfullscreen='', loading='lazy', referrerpolicy='no-referrer-when-downgrade')
+          

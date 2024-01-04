@@ -1,0 +1,135 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Sono:wght@300;400;500&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap', rel='stylesheet')
+    script(type='module', src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js')
+    script(nomodule='', src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js')
+    script(defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js") 
+
+    
+    // Reusable Files
+    link(rel='stylesheet', href='css/resuable.css')
+    script(defer, src='js/resuable.js')
+    script(defer src="js/showAlert.js") 
+
+    // Personal Files
+    block files
+        //- Files
+
+    link(rel="stylesheet", href="css/mediaQueries.css")
+    script(src="js/mediaQueries.js") 
+
+    link(rel="shortcut icon", href="data/icons/favicon.png", type="")
+
+    title Furnomech | #{title}
+  body
+    // **********************************************************************************
+    // OVERLAY (INTRO ANIMATION)
+    // **********************************************************************************
+    .overlay
+      .title
+        img.overImg(src='data/Logos/main-furnomech-logo.png', alt='')
+
+    // **********************************************************************************
+    // SHOW ALERT
+    // ********************************************************************************** 
+    .overlay-alert
+      .div-alert.error
+        ion-icon(name='checkmark-circle-outline')
+        p.alert-message Captcha Failed
+
+    block overlay 
+        //- Overlay content
+
+    // **********************************************************************************
+    // Navigation
+    // **********************************************************************************
+    // Navigation Dropdown
+    nav.navigation.contanier
+      .div-links
+        a.link(href='/')
+          p
+            | Home 
+            sup.num 01
+        a.link(href='/../#section-testimonial')
+          p
+            | Testimonials 
+            sup.num 02
+        a.link(href='/projects')
+          p
+            | Projects 
+            sup.num 03
+        a.link(href='/categories')
+          p
+            | Categories 
+            sup.num 04
+        a.link(href='/about-us')
+          p
+            | About 
+            sup.num 05
+        a.link(href='/contact-us')
+          p
+            | Contact 
+            sup.num 06
+    // Navigation Bar
+    nav.nav.contanier
+      a.cursor-pointer(href="/")
+        img.logo(src='data/Logos/main-furnomech-logo.png', alt='')
+      ion-icon.btn.btn-menu.open(name='menu-outline')
+    // **********************************************************************************
+    // SCROLL TO TOP
+    // **********************************************************************************
+    .scroll-to-top.cursor-pointer
+      ion-icon.top-icon(name='arrow-up-circle')
+
+    block content  
+        //- HOME PAGE CONTENT
+    // **********************************************************************************
+    // Footer
+    // **********************************************************************************
+    footer.footer.contanier
+      .furnomech-details
+        img.footer-logo(src='data/Logos/white-furnomech-logo.png', alt='')
+        p.address
+          br
+        p.craftedAt Crafted at: Omech Engineering Co. Pvt. Ltd.
+        p.address-alignment
+          | F-12, MIDC, Chikalthana - 431001 
+          br
+          | &#x9;&#x9;      Chh. Sambhajinagar (Aurangabad),
+          br
+          | &#x9;&#x9;     Maharashtra, India.
+        p
+        br
+        p.email-logo
+          | &#x2709;&#xFE0F; Email us at: 
+          a.email(target='_blank', href='mailto:info@furnomech.com') info@furnomech.com
+        p.copyright
+          | &copy;&#xFE0F;&thinsp; Copyright 
+          span.color-footer Furnomech&reg;
+          |  2015-2023 All Rights Reserved
+        // <p class='rights'>All Rights Reserved</p>
+      .footer-project-links
+        p.footer-links-title Quick Links
+        .div-quick-links
+          a.quick-link(href='#') Residential
+          a.quick-link(href='#') Office
+          a.quick-link(href='#') Living Room
+          a.quick-link(href='#') Kitchen
+          a.quick-link(href='#') Residential
+          a.quick-link(href='#') Office
+          a.quick-link(href='#') Living Room
+          a.quick-link(href='#') Kitchen
+          a.quick-link(href='#') Residential
+          a.quick-link(href='#') Office
+          a.quick-link(href='#') Living Room
+          a.quick-link(href='#') Kitchen
+          a.quick-link(href='#') Residential
+          a.quick-link(href='#') Office
+          a.quick-link(href='#') Living Room
+          a.quick-link(href='#') Kitchen

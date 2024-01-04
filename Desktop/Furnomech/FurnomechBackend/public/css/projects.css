@@ -1,0 +1,41 @@
+.div-projects {
+  display: grid;
+  row-gap: 12rem;
+  margin-top: 4.8rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.2rem;
+  opacity: 1;
+}
+
+.div-project-img {
+  /* width: 96rem; */
+}
+
+.project-img {
+  width: 50rem;
+}
+
+.div-project-desc {
+  display: grid;
+  row-gap: 2.2rem;
+}
+
+.project-title {
+  font-size: 7.4rem;
+  color: var(--dark-text-color);
+}
+
+.project-text {
+  font-family: poppins, sans-serif;
+  font-size: 1.8rem;
+  color: var(--sub-text-color);
+}
+
+.project-link {
+  margin-top: 1.2rem;
+}

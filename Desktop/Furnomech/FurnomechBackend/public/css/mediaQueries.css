@@ -1,0 +1,340 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .section,
+  .about-content {
+    padding: 3.2rem 2.4rem 4.2rem 2.4rem;
+  }
+
+  .scroll-to-top {
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  .link {
+    font-size: 6rem;
+  }
+  .about-btn-container {
+    margin-top: 0rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 769px) { */
+
+@media only screen and (max-width: 769px) {
+  .overImg {
+    width: 90vw;
+  }
+
+  .section-home {
+    flex-direction: column;
+  }
+
+  .div-home-text {
+    display: grid;
+  }
+
+  .navigation {
+    justify-content: start;
+  }
+
+  .div-links {
+    grid-template-columns: 1fr;
+    /* background-color: red;   */
+  }
+
+  .nav {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 18rem;
+  }
+
+  .navigation {
+    align-items: start;
+    padding-top: 15.4rem;
+  }
+
+  .contanier {
+    padding-left: 1.2rem;
+    /* padding: 0 2.4rem; */
+  }
+
+  .div-links {
+    column-gap: 0rem;
+    width: 100%;
+  }
+
+  .link {
+    font-size: 2.2rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    /* width: 17rem; */
+  }
+
+  .num {
+    font-size: 1rem;
+  }
+
+  .section-home {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5.4rem;
+    align-items: center;
+    height: 5rem;
+    padding-top: 42rem;
+  }
+
+  .div-home-text {
+    display: flex;
+    margin-top: -31rem;
+    margin-right: -2rem;
+  }
+
+  .home-title{
+    font-size: 4rem;
+  }
+
+  .home-about-us-link{
+    display: none;
+  }
+
+  .home-title {
+    font-size: 3rem;
+    width: 220px;
+    margin-top: 1.1rem;
+  }
+
+  .home-btns {
+    margin-top: -7.4rem;
+  }
+
+  .primary-link {
+    padding: 1.1rem 1.1rem;
+    font-size: 1rem;
+  }
+
+  .pri-img {
+    width: 15.4rem;
+  }
+
+  .sec-img {
+    width: 7.4rem;
+  }
+
+  .about-para {
+    font-size: 1.5rem;
+  }
+
+  .secondary-link {
+    padding: 1rem 1rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-content {
+    padding: 2.4rem 0rem;
+  }
+
+  .features-btn {
+    padding: 1.4rem 3.2rem;
+    height: 1.9rem;
+    font-size: 1.6em;
+  }
+
+  .div-features-desc {
+    display: flex;
+    width: 30px;
+  }
+
+  .features-icon {
+    display: none;
+  }
+
+  .features-title {
+    font-size: 2.4rem;
+    margin-left: -2rem;
+  }
+
+  .desc-text {
+    font-size: 0.3rem;
+    margin-left: -2rem;
+  }
+  .portfolio-content {
+    gap: 2rem;
+  }
+
+  .card-projects{
+    width: 30px;
+  }
+
+  .card-img-wrapper {
+    width: 17rem;
+    height: 22rem;
+  }
+
+  .card-img {
+    width: 17rem;
+  }
+
+  .overlay-text {
+    font-size: 3rem;
+  }
+
+  /* Testimonials */
+  .client-img {
+    width: 50px;
+    height: min-content;
+    padding: 1.6rem;
+    border-radius: 100000000rem;
+    background-color: var(--light-text-color);
+  }
+
+  .client-name {
+    font-size: 2.4rem;
+  }
+
+  .stars {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .div-review {
+    padding-top: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-alignment {
+    margin-left: 0rem;
+  }
+
+  .email-logo {
+    width: 30rem;
+  }
+
+  .footer-project-links {
+    height: 35rem;
+  }
+
+  .footer-links-title {
+    font-size: 3.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .quick-link {
+    font-size: 1.4rem;
+  }
+
+  .top-icon {
+    font-size: 5.6rem;
+    margin-right: -3.1rem;
+    margin-bottom: -2rem;
+  }
+
+  /* About Us */
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-content {
+    padding: 3.2rem 0rem;
+    width: 32rem;
+    margin-left: -1.8rem;
+  }
+
+  .omech-grp-img {
+    display: none;
+  }
+
+  .div-about-omech {
+    height: 60rem;
+  }
+
+  .info-omech {
+    font-size: 1.4rem;
+    margin-left: -1.4rem;
+  }
+
+  .div-about-furnomech {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-furnomech-grp {
+    width: 90%;
+  }
+
+  .info-title-text {
+    font-size: 3rem;
+  }
+
+  .furnomech-stats {
+    margin-top: 1rem;
+    width: 90%;
+    row-gap: 2.2rem;
+  }
+
+  .stat-num {
+    font-size: 4rem;
+  }
+
+  .stat-desc {
+    font-size: 1.2rem;
+  }
+
+  .page-sub-title {
+    font-size: 3rem;
+  }
+
+  .sub-content-wrapper {
+    overflow: hidden;
+  }
+
+  .div-our-team {
+    overflow-x: scroll;
+    padding-left: 46rem;
+    padding-right: 40rem;
+  }
+
+  /* Contact US */
+
+  .div-page-title {
+    margin-left: -2rem;
+  }
+
+  .map-address {
+    display: block;
+    width: 28rem;
+    /* margin: 4.8rem auto; */
+    margin-left: -2.4rem;
+    padding: 2.4rem;
+  }
+
+  .div-sub-title {
+    margin: 3.2rem 0;
+    margin-left: -2rem;
+  }
+
+  .form-contact-us {
+    width: 28rem;
+    margin-left: -2rem;
+  }
+
+  .input,
+  label {
+    padding: 1rem 0.4rem;
+    font-size: 1.2rem;
+  }
+}

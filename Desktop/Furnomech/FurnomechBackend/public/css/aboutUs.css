@@ -1,0 +1,213 @@
+/* ******************************************************************************** */
+/* About Omech  */
+/* ******************************************************************************** */
+
+.div-about-omech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 0rem;
+  /* width: 98%; */
+  /* background-color: #ffff; */
+  background-color: #ffe8d6;
+}
+
+.about-omech-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 2.4rem;
+  gap: 4rem;
+}
+
+.omech-grp-img {
+  height: 100%;
+}
+
+.info-omech-grp{
+  padding: 2.4rem;
+}
+
+.info-title {
+  font-family: marope, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--dark-text-color);
+
+  padding: 1rem 0rem;
+}
+
+.info-omech {
+  font-family: poppins;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-text-color);
+}
+
+/* ******************************************************************************** */
+/* About Furnomech */
+/* ******************************************************************************** */
+
+.div-about-furnomech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10.2rem 0;
+  gap: 10%;
+}
+
+.info-furnomech-grp {
+  width: 50%;
+}
+
+.info-title-text {
+  color: var(--dark-text-color);
+  font-size: 5rem;
+  margin-bottom: 1.4rem;
+}
+
+.info-furnomech {
+  font-family: poppins, sans-serif;
+  font-size: 1.4rem;
+  color: #957f72;
+}
+
+.furnomech-stats {
+  width: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  font-family: poppins, sans-serif;
+}
+
+.stat {
+}
+
+.stat-num {
+  font-family: Manrope, sans-serif;
+  font-size: 6.4rem;
+  color: var(--dark-text-color);
+}
+
+.stat-desc {
+  font-size: 1.8rem;
+  color: #957f72;
+}
+
+/* ******************************************************************************** */
+/* Our Team */
+/* ******************************************************************************** */
+
+.div-our-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.member-img-wrapper {
+  overflow: hidden;
+}
+
+.member-img {
+  width: 30rem;
+  transition: all 0.5s;
+}
+
+.member-img:hover {
+  scale: 1.1;
+}
+
+.member-name {
+  font-size: 3.8rem;
+  color: var(--dark-text-color);
+  margin: 0.2rem 0;
+}
+
+.member-post {
+  font-family: poppins, sans-serif;
+  font-size: 1.8rem;
+  color: var(--sub-text-color);
+  letter-spacing: 1px;
+}
+
+/* Overlay card */
+
+.overlay-bg-blur {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #957f7256;
+  background: linear-gradient(
+    to bottom,
+    var(--blur-bg-color),
+    var(--blur-bg-color)
+  );
+  -webkit-backdrop-filter: blur(32px);
+  backdrop-filter: blur(12px);
+  z-index: 1;
+  display: none;
+}
+
+.overlay-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -53%);
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+
+  width: 80vw;
+
+  margin: 4.8rem;
+  padding: 3.2rem;
+  background-color: var(--light-text-color);
+  display: none;
+
+  background-color: var(--btn-bg-color);
+  border: 2px solid var(--sub-text-color);
+}
+
+.close-icon {
+  font-size: 3.6rem;
+  color: #000;
+  transform: translateY(-2rem);
+  cursor: pointer;
+}
+
+.overlay-member-img {
+  width: 28rem;
+  /* height: 30rem; */
+}
+
+.main-info {
+  margin: 1.4rem;
+}
+
+.card-member-name {
+  font-size: 6.4rem;
+  font-weight: 300;
+  color: var(--dark-text-color);
+}
+
+.card-member-designation {
+  font-family: poppins, sans-serif;
+  color: var(--sub-text-color);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.card-member-info,
+.card-member-list {
+  font-family: poppins, sans-serif;
+  font-size: 1.5rem;
+  color: var(--sub-text-color);
+}

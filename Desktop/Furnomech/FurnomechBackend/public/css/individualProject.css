@@ -1,0 +1,145 @@
+.mainp-header{
+    /* padding: 17rem; */
+    /* padding-top: 8rem; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 18rem;
+
+}
+
+.p-header-img{
+    overflow: hidden;
+}
+
+.p-main-img{
+    position: relative;
+    z-index: -1;
+    height: 50rem;
+    width: 35rem;
+}
+
+.p-header-title{
+    font-size: 7.4rem;
+    color: var(--dark-text-color);
+    font-weight: 400;
+}
+
+.p-header-para{
+    font-family: poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+
+    padding-top: 2rem;
+}
+
+.p-header-overlay{
+    height: 18rem;
+    width: 90rem;
+    background-color: #e5d9cf;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 14rem;
+    margin-left: -21rem;
+    z-index: 99999;
+
+}
+
+.p-overlay-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-title{
+    font-family: poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--sub-text-color);
+}
+
+.overlay-subtitle{
+    font-family: poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+}
+
+/* .line-align{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.line{
+    height: 1.4px;
+    width: 114rem;
+    background-color: #e5d9cf;
+    margin: 4rem 0rem;
+} */
+
+
+.sub-content{
+    margin: 12rem 4.2rem;
+}
+
+.p-about-title{
+    font-size: 4.2rem;
+    color: var(--dark-text-color);
+    font-weight: 400;
+}
+
+.p-about-para-div{
+    padding: 0rem 2rem;
+}
+
+
+.p-about-para{
+    font-family: poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+    padding-top: 4rem;
+
+}
+
+
+.img-container{
+    padding: 7rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-image{
+    height: 72rem;
+}
+
+.div-project-gallery{
+    margin: 4.2rem;
+    display: grid;
+    justify-content:stretch;
+    align-items: center;
+    row-gap: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.div-project-img{
+    width: 24rem; 
+    height: 24rem;
+    overflow: hidden;
+}
+
+.project-img{
+    /* width: 30rem; */
+    /* height: max-content; */
+    transition: all .3s;
+}
+
+.project-img:hover{
+    scale: 1.05;
+}

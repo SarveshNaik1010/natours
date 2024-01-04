@@ -1,0 +1,84 @@
+extends base
+
+block files 
+    link(rel="stylesheet", href="css/reusablePage.css")
+    link(rel="stylesheet", href="css/categories.css")
+    script(defer src="js/categories.js")
+    link(rel='stylesheet', href='css/resuable.css')
+    script(defer, src='js/resuable.js')
+    script(defer src="js/showAlert.js") 
+
+
+block content 
+  <div class="div-carousel div-carousel-overlay hidden-carousel">
+    <div class="carousel-overlay-blur"></div>
+    <div class="carousel-overlay">
+      <div class="scroll-left">
+        <ion-icon class="scroll-arrow scroll-left cursor-pointer" name="chevron-back-outline"></ion-icon>
+      </div>
+      <div class="overlay-content">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+          <img class="imgC" src="http://127.0.0.1:8000/data/projectImages/project-1689919423035.jpeg" alt="">
+      </div>
+      <div class="scroll-right">
+        <ion-icon class="btn-close-carousel cursor-pointer" name="close-outline"></ion-icon>
+        <ion-icon class="scroll-arrow scroll-right cursor-pointer" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+  .page.page-categories
+    .page-wrapper
+      // Sidebar
+      .div-categories-sidebar
+        // Sidebar title
+        .div-sidebar-title
+          p.sidebar-title List
+        // Sidebar content
+        .div-sidebar-content
+          .div-category
+            // Main Category
+            .div-main-category
+              p.main-category 1. Residential
+              ion-icon.btn-sub-cat-slide(name='chevron-down-outline')
+            // Sub Categories
+            .div-sub-categories.hide-cate
+              .sub-categories-wrapper
+                p.sub-category Office
+                p.sub-category Kitchen
+                p.sub-category Master Bedroom
+                p.sub-category Bathroom
+          .div-category
+            // Main Category
+            .div-main-category
+              p.main-category 2. Office
+              ion-icon.btn-sub-cat-slide(name='chevron-down-outline')
+            // Sub Categories
+            .div-sub-categories.hide-cate
+              .sub-categories-wrapper
+                p.sub-category Conferenfce
+                p.sub-category Lobby
+                p.sub-category Cabin
+                p.sub-category Reception
+          .div-category
+            // Main Category
+            .div-main-category.hide-cate
+              p.main-category 3. Hospital
+              ion-icon.btn-sub-cat-slide(name='chevron-down-outline')
+            // Sub Categories
+            .div-sub-categories
+              .sub-categories-wrapper
+                p.sub-category Room
+                p.sub-category Lobby
+                p.sub-category Cabin
+                p.sub-category Reception
+      // Display Categories
+      .div-display-categories
+        .display-categories-wrapper
+          .div-page-title
+            p.page-title.animate-title.categories-title &mdash; Categories
+          .div-content-category
+            p.display-category-title.animate-card-right Use the navigation bar on the left to explore our work by category

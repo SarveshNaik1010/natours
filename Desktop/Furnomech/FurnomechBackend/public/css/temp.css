@@ -1,0 +1,77 @@
+.map-address {
+    display: block;
+    width: 80vw;
+    margin: 4.8rem auto;
+    padding: 2.4rem;
+    background-color: var(--btn-bg-color);
+    border: 0.2rem solid var(--sub-text-color);
+  }
+  
+  .map {
+    width: 100%;
+  }
+  
+  .div-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-contact-us {
+    width: 80vw;
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
+  }
+  
+  .input,
+  label {
+    font-family: poppins, sans-serif;
+    display: block;
+    background-color: var(--white-bg-color);
+    border: 0.1rem solid var(--sub-text-color);
+    padding: 1.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .input:focus {
+    outline: 1px solid var(--dark-text-color);
+  }
+  
+  .form-message {
+    grid-column: 1 / 3;
+  }
+  
+  .input-message {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .captcha-text {
+    font-family: poppins, sans-serif;
+    font-size: 3.2rem;
+    color: var(--dark-text-color);
+  }
+  
+  .captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 2rem;
+    width: min-content;
+    color: var(--dark-text-color);
+  }
+  
+  .captcha-sum {
+    font-size: 2rem;
+  }
+  
+  .btn-submit {
+    display: block;
+    border: none;
+  }
+  

@@ -1,0 +1,90 @@
+extends base
+
+block files 
+    link(rel='stylesheet', href='css/aboutUs.css')
+    link(rel='stylesheet', href='css/reusablePage.css')
+    script(defer, src='js/aboutUs.js')
+
+block overlay 
+    .overlay-bg-blur
+    .overlay-card
+        .div-overlay-member-img
+            img.overlay-member-img(src='https://assets.website-files.com/62dae85d36cc11580a6942ab/62eafa7ff885ef4e0f4bd8bb_team-member-profile-02-p-500.jpg', alt='')
+        .div-overlay-member-info
+            h1.name   Sarvesh Naik
+            p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Error adipisci nulla, quasi odio ab sed necessitatibus dolor veniam! Blanditiis sint voluptatum, tenetur minima ratione aliquid laborum facilis aperiam perferendis doloribus?
+
+
+block content 
+    .page.page-about-us
+      // Title of the page
+      .div-page-title
+        p.page-title.animate-title &mdash; About us
+      // Main content
+      .page-content
+        // About Omech
+        .div-about-omech.animate-element.sub-content-wrapper
+          .about-omech-flex
+            .info-omech-grp
+              .div-info-title
+                p.info-title About Omech
+              .info-omech Omech is a highly reputable and well-established, ISO certified group boasting 40+ years of experience as pioneers in the field of precision engineering activities of tool room automotive components. Guided by visionary directors with over 3 decades of experience in interior design and project execution and equipped with state-of-the-art European manufacturing machinery, the Omech group established Furnomech in 2013. We take pride in crafting furniture that exceeds expectations, tailoring each piece to fulfil our clients' unique visions, creating furniture that transcends expectations across various domains, be it offices, institutions, commercial spaces, or residential settings.
+
+
+        // About Furnomech
+        .div-about-furnomech.animate-element.sub-content-wrapper
+          .info-furnomech-grp
+            .div-info-title
+              p.info-title Our stats
+            p.info-title-text
+              | A team with passion
+            p.info-furnomech
+              | When you choose Furnomech, you embark on a transformative journey, where your spaces are imbued with creativity and functionality. Our team of passionate professionals is committed to turning your aspirations into breathtaking realities. Our ethos revolves around building strong and enduring relationships built on confidence and trust. We understand that trust is earned through consistent delivery of exceptional products. This belief drives us to maintain the highest standards and consistently exceed the expectations of our valued customers.
+          .furnomech-stats
+            .stat
+              p.stat-num
+                span.animate-num(data-num='600') 0
+                | +
+              p.stat-desc Successful projects
+            .stat
+              p.stat-num
+                span.animate-num(data-num='20') 0
+                | +
+              p.stat-desc Employees
+            .stat
+              p.stat-num
+                span.animate-num(data-num='10') 0
+                | +
+              p.stat-desc
+                | Years of experience
+            .stat
+              p.stat-num
+                span.animate-num(data-num='95') 0
+                | %
+              p.stat-desc Satisfaction rate
+        // Our Team
+        .sub-content-wrapper
+          .div-sub-title
+            p.page-sub-title.animate-title
+              | &mdash; Our 
+              span.italic leadership
+          .div-our-team
+            .card.card-1.cursor-pointer(data-member='OmprakashKabra')
+              .member-img-wrapper
+                img.member-img(src='data/images/om-kabra.png', alt='')
+              .member-info
+                p.member-name O M Kabra
+                p.member-post Managing Director
+            .card.card-2.cursor-pointer(data-member='AnupKabra')
+              .member-img-wrapper
+                img.member-img(src='https://assets.website-files.com/62dae85d36cc11580a6942ab/62edb3cd043a36bf96e29f31_team-member-profile-03-p-500.jpg', alt='')
+              .member-info
+                p.member-name Anup Kabra
+                p.member-post Chief Executive Officer
+            .card.card-3.cursor-pointer(data-member='AnjaliKabra')
+              .member-img-wrapper
+                img.member-img(src='data/images/anjali-kabra.png', alt='')
+              .member-info
+                p.member-name Anjali Kabra
+                p.member-post Chief Designer
